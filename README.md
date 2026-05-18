@@ -3,7 +3,7 @@
 - 🌱 I’m currently learning ...
 - 💞️ I’m looking to collaborate on ...
 - I'M design ui/ux
-- 📫 How to reach me dominhduchd10@gmail.com
+
 
 <!---
 minhduchd-mds/minhduchd-mds is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
