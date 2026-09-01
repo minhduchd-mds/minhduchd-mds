@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/minhduchd-mds/minhduchd-mds/ecosystem/product-manifest.schema.json",
+  "title": "MDS Product Manifest",
+  "type": "object",
+  "required": ["schemaVersion", "repo", "role", "lifecycle", "capabilities", "qualityGates"],
+  "properties": {
+    "schemaVersion": {"type":"string"},
+    "repo": {"type":"string","minLength":1},
+    "role": {"type":"string","minLength":1},
+    "lifecycle": {"enum":["flagship","active","incubator","history","archive"]},
+    "capabilities": {"type":"array","items":{"type":"string"},"uniqueItems":true},
+    "consumes": {"type":"array","items":{"type":"string"},"uniqueItems":true},
+    "interfaces": {"type":"array","items":{"type":"string"},"uniqueItems":true},
+    "qualityGates": {"type":"array","items":{"type":"string"},"minItems":1},
+    "docs": {"type":"array","items":{"type":"string"}},
+    "owners": {"type":"array","items":{"type":"string"}},
+    "risk": {"enum":["low","medium","high","critical"]}
+  },
+  "additionalProperties": true
+}

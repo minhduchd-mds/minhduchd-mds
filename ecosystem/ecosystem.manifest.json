@@ -1,0 +1,18 @@
+{
+  "$schema": "./product-manifest.schema.json",
+  "schemaVersion": "1.0.0",
+  "updated": "2026-09-01",
+  "products": [
+    {"repo":"desygn-ai","role":"design-intelligence-product","tier":"flagship","score":9.1,"consumes":["design-knowledge","design-tools","agent-execution"]},
+    {"repo":"Design-hub","role":"design-knowledge-plane","tier":"flagship","score":8.9,"owns":["design-knowledge","hybrid-search","retrieval-policy"]},
+    {"repo":"open-design","role":"agent-execution-plane","tier":"flagship","score":8.8,"owns":["agent-execution","workspace","artifact-runtime"]},
+    {"repo":"Genbi","role":"governed-analytics-product","tier":"flagship","score":8.6,"owns":["semantic-metrics","analytical-plans","visualization-recommendation"]},
+    {"repo":"AI-design.tools","role":"design-tool-plane","tier":"flagship","score":8.2,"owns":["design-tools","token-intelligence","design-transformation"]},
+    {"repo":"Chat-hub","role":"agent-communication-hub","tier":"active","score":8.0,"owns":["conversation-ordering","reconnect-state"]},
+    {"repo":"Dashbord-odo","role":"decision-dashboard","tier":"active","score":7.8,"owns":["kpi-decision-model"]},
+    {"repo":"Tracking-map-to-taxi---v.1","role":"realtime-geospatial","tier":"active","score":7.7,"owns":["location-reducer","gps-plausibility"]},
+    {"repo":"Appallinone","role":"progressive-modernization","tier":"active","score":7.4,"owns":["solution-ranking"]},
+    {"repo":"vss-employee-experience-management-","role":"employee-experience","tier":"active","score":7.2,"owns":["employee-workflows"]}
+  ],
+  "principles": ["single-capability-owner","clean-room-implementation","typed-contracts","deterministic-core","independent-review","progressive-migration","observable-production"]
+}
