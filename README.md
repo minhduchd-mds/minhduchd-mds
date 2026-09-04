@@ -14,7 +14,7 @@ The current direction is not “add AI to every repository”. Each active produ
 | [open-design](https://github.com/minhduchd-mds/open-design) | Local-first design/agent execution workspace |
 | [Design-hub](https://github.com/minhduchd-mds/Design-hub) | Design knowledge, search and reusable enterprise patterns |
 | [AI-design.tools](https://github.com/minhduchd-mds/AI-design.tools) | Design transformation, asset conversion and token intelligence tools |
-| [Genbi](https://github.com/minhduchd-mds/Genbi) | Governed AI-assisted analytics and visualization planning |
+| [Genai](https://github.com/minhduchd-mds/Genai) | Governed AI-assisted analytics and visualization planning |
 | [Chat-hub](https://github.com/minhduchd-mds/Chat-hub) | Human/agent communication and deterministic realtime conversation core |
 | [Appallinone](https://github.com/minhduchd-mds/Appallinone) | Progressive modernization of a legacy multi-page web product |
 | [Dashbord-odo](https://github.com/minhduchd-mds/Dashbord-odo) | Data-first decision dashboard and explainable KPI prioritization |
