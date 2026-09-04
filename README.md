@@ -19,7 +19,7 @@ The current direction is not “add AI to every repository”. Each active produ
 | [Appallinone](https://github.com/minhduchd-mds/Appallinone) | Progressive modernization of a legacy multi-page web product |
 | [Dashbord-odo](https://github.com/minhduchd-mds/Dashbord-odo) | Data-first decision dashboard and explainable KPI prioritization |
 | [Tracking-map-to-taxi---v.1](https://github.com/minhduchd-mds/Tracking-map-to-taxi---v.1) | Provider-neutral realtime geospatial tracking core |
-| [vss-employee-experience-management-](https://github.com/minhduchd-mds/vss-employee-experience-management-) | Enterprise employee-experience product under staged Angular modernization |
+| [Employee_experience_management](https://github.com/minhduchd-mds/employee-experience-management) | Enterprise employee-experience product under staged Angular modernization |
 
 ## Engineering principles
 
