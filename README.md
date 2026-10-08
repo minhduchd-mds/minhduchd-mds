@@ -1,75 +1,62 @@
-# Minh Đức — Product Design & AI Engineering Portfolio
+# Minh Đức — Product Design · Frontend Engineering · Applied AI
 
-## About
+**Senior-oriented UI/UX & product-engineering portfolio** · Design systems, web applications, applied AI, edge computing and engineering quality.
 
-This GitHub space is a portfolio of product-design, frontend, data, AI-agent and developer-tooling experiments that are being consolidated into a smaller set of maintainable products.
+I work across the product lifecycle: translating ambiguous problems into usable interfaces, defining UI systems and interaction flows, and building testable implementations. My repositories include actively developed products, research prototypes and historical learning projects. Those categories should **not** be confused with shipped, certified or production-ready software.
 
-The current direction is not “add AI to every repository”. Each active product gets a clear domain, architecture boundary, testable core, source-provenance policy and an agent workflow that plans before it edits code.
+## Featured work
 
-## Active product ecosystem
+| Repository | Focus | Maturity / boundary |
+| --- | --- | --- |
+| [miraai](https://github.com/minhduchd-mds/miraai) | Multimodal AI companion experiments, voice, computer vision and app packaging | Active R&D; hardware/device behavior must be validated |
+| [desygn-ai](https://github.com/minhduchd-mds/desygn-ai) | Design intelligence, audit workflows and AI-assisted implementation | Active product experimentation |
+| [open-design](https://github.com/minhduchd-mds/open-design) | Design/agent workspace with local-first execution patterns | Active tooling |
+| [AI-design.tools](https://github.com/minhduchd-mds/AI-design.tools) | Practical design transformation and asset tools | Development tooling |
+| [cv-template](https://github.com/minhduchd-mds/cv-template) | CV creation, editing, templates and review experiences | Product and UI/UX experimentation |
+| [esp32-rf-high-frequency](https://github.com/minhduchd-mds/esp32-rf-high-frequency) | ESP32-S3 receive-only RF observatory and instrumentation | Experimental measurement platform, not a calibrated laboratory instrument |
+| [SM-OS-mini](https://github.com/minhduchd-mds/SM-OS-mini) | Minimal embedded development environment for ESP32-class devices | Research prototype |
+| [Customer-service-bot](https://github.com/minhduchd-mds/Customer-service-bot) | Customer-service automation and assistant architecture | Development project |
 
-| Project | Product role |
+### Private research
+
+**KINGMAST** explores warning-only automotive perception, multi-camera/radar fusion, vehicle HMI and evidence-driven safety evaluation. It is a research prototype, **not** an autonomous-driving system or certified ADAS product. Private repositories and professional/customer materials are intentionally not published as a complete public portfolio.
+
+## Engineering standards
+
+- **Product / UX:** measurable user goals, realistic scenarios, accessibility, responsive layout and honest error states.
+- **Architecture:** explicit domain boundaries, typed contracts, progressive migration and deterministic core logic.
+- **AI:** model/data provenance, offline fallback, validation data, observable failure handling and human oversight.
+- **Embedded / automotive:** hardware constraints, timestamp integrity, safe degradation, read-only vehicle integration and independent evidence.
+- **Security:** least privilege, secret hygiene, dependency provenance, auditable CI and safe release processes.
+
+## Portfolio taxonomy
+
+| Class | Expectation |
 | --- | --- |
-| [desygn-ai](https://github.com/minhduchd-mds/desygn-ai) | Design Intelligence Platform — audit, scoring, recommendations and agent-assisted implementation |
-| [open-design](https://github.com/minhduchd-mds/open-design) | Local-first design/agent execution workspace |
-| [Design-hub](https://github.com/minhduchd-mds/Design-hub) | Design knowledge, search and reusable enterprise patterns |
-| [AI-design.tools](https://github.com/minhduchd-mds/AI-design.tools) | Design transformation, asset conversion and token intelligence tools |
-| [Genai](https://github.com/minhduchd-mds/Genai) | Governed AI-assisted analytics and visualization planning |
-| [Chat-hub](https://github.com/minhduchd-mds/Chat-hub) | Human/agent communication and deterministic realtime conversation core |
-| [Appallinone](https://github.com/minhduchd-mds/Appallinone) | Progressive modernization of a legacy multi-page web product |
-| [Dashbord-odo](https://github.com/minhduchd-mds/Dashbord-odo) | Data-first decision dashboard and explainable KPI prioritization |
-| [Tracking-map-to-taxi---v.1](https://github.com/minhduchd-mds/Tracking-map-to-taxi---v.1) | Provider-neutral realtime geospatial tracking core |
-| [Employee_experience_management](https://github.com/minhduchd-mds/employee-experience-management) | Enterprise employee-experience product under staged Angular modernization |
+| **Active product / library** | Specific README, architecture, setup, validation steps, security and provenance notes |
+| **Research prototype** | Hypothesis, test methodology, experimental limitations and measured vs. proposed results |
+| **Historical exercise** | Short factual README and maintenance status; do not claim it is production-ready |
+| **Duplicate / superseded** | Choose the canonical repository before future development; archive only after verification |
 
-## Engineering principles
+Detailed working rules: [Agent Repository Standard](AGENT_REPOSITORY_STANDARD.md) and [GitHub Portfolio Documentation Policy](docs/GITHUB_PORTFOLIO_POLICY_2026.md).
 
-- Product problem and measurable outcome before framework migration.
-- Domain logic separated from rendering, vendor SDKs and infrastructure adapters.
-- Deterministic algorithms and invariant tests for scoring, ranking, ordering and analytics logic.
-- Progressive modernization instead of uncontrolled big-bang rewrites.
-- Accessibility, responsive behavior, failure states and observability are acceptance criteria.
-- External projects are used as conceptual/API references unless adaptation is explicitly documented.
-- Third-party licenses, notices and source provenance are retained.
+## Repository About and README audit
 
-## Agent workflow
+The portfolio has a **dry-run-first** tool to fill missing GitHub About descriptions based on repository README sections. It preserves existing descriptions, visibility, topics and homepage settings.
 
-Active repositories follow the operating model documented in [`AGENT_REPOSITORY_STANDARD.md`](AGENT_REPOSITORY_STANDARD.md):
+```bash
+# Requires Python 3.10+ and GitHub CLI logged in with permissions.
+python3 scripts/sync-repo-about.py
+python3 scripts/sync-repo-about.py --include-private
 
-```text
-Product / Domain Planner
-        ↓
-Task graph
-        ↓
-Builder agent(s)
-        ↓
-Independent reviewer
-        ↓
-Tests / evaluation
-        ↓
-Human merge gate
+# Run only after reviewing dry-run output:
+python3 scripts/sync-repo-about.py --apply --include-private
 ```
 
-Agent infrastructure is intentionally not added to learning repositories, duplicates or archive candidates.
+The script is optional and **does not execute automatically**. See [the script](scripts/sync-repo-about.py).
 
-## Repository strategy
+## Collaboration
 
-The portfolio is being cleaned into three groups:
+The work shown here spans **product design, design systems, frontend architecture, AI prototyping and embedded exploration**. Individual repositories are the source of truth for their implementation status and licensing.
 
-1. **Active products** — maintained, documented and tested.
-2. **Merge candidates** — useful code that should move into a canonical repository.
-3. **Archive/history** — learning exercises and superseded prototypes kept for reference.
-
-## Documentation standard
-
-Every active repository should expose at least:
-
-- `README.md` with an **About** section;
-- architecture / product direction;
-- setup and verification commands;
-- roadmap or migration notes;
-- security notes when credentials, auth or private data are involved;
-- `docs/SOURCE_PROVENANCE.md` when external references or algorithms are relevant.
-
----
-
-> Status: active portfolio modernization. Repository-specific README files are the source of truth for setup and implementation details.
+> Documentation describes the state and limits of a project. It does not substitute for passing tests, hardware qualification or user validation.
