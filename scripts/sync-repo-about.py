@@ -59,7 +59,18 @@ def make_description(name: str, readme: str) -> str:
                 break
     if about_lines:
         return clean(" ".join(about_lines))
-    # For READMEs without an explicit About, avoid guessing implementation quality.
+    # Choose a meaningful introductory sentence when an explicit About is absent.
+    # Ignore headings, badges, HTML wrappers, code, navigation and status labels.
+    for line in lines[:65]:
+        item = line.strip()
+        if not item or item.startswith(("#", "![", "[![", "<", "|", "-", "* ", "`")):
+            continue
+        candidate = clean(item)
+        if len(candidate) >= 45 and not candidate.lower().startswith(
+            ("status", "documentation", "quick start", "getting started", "version")
+        ):
+            return candidate
+    # Historical or otherwise ambiguous repositories get a neutral description.
     return clean(f"{name}: source code and project documentation. See README for status and scope.")
 
 
