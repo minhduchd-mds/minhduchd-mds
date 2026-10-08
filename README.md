@@ -40,6 +40,17 @@ I work across the product lifecycle: translating ambiguous problems into usable 
 
 Detailed working rules: [Agent Repository Standard](AGENT_REPOSITORY_STANDARD.md) and [GitHub Portfolio Documentation Policy](docs/GITHUB_PORTFOLIO_POLICY_2026.md).
 
+## October 2026 documentation audit
+
+An authenticated file-by-file review on **8 October 2026** found **67/67 repositories with a README.md**, across **36 public / 31 private repositories**. **31 About fields are blank** (18 public / 13 private). A README file's existence is not a claim of documentation quality, source security or passing CI.
+
+- [Portfolio audit, public-safe summary](docs/REPOSITORY_AUDIT_2026-10-08.md)
+- [Read-only repository audit script](scripts/audit_repo_portfolio.py)
+- [About description dry-run / opt-in sync](scripts/sync-repo-about.py)
+- [Kingmast Camera AI research (private repo)](https://github.com/minhduchd-mds/Kingmast/blob/main/docs/CAMERA_AI_RESEARCH_2026.md)
+
+The repository About synchronization script remains **dry-run by default**. The connected file-edit workflow did not modify GitHub repository About settings.
+
 ## Repository About and README audit
 
 The portfolio has a **dry-run-first** tool to fill missing GitHub About descriptions based on repository README sections. It preserves existing descriptions, visibility, topics and homepage settings.
